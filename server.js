@@ -54,6 +54,14 @@ app.get("/", (req, res) => {
     })
 });
 
+app.get("/projects", (req, res) => {
+    //res.send('About Page');
+    res.render('projects.hbs', {
+        pageTitle: 'Project page'
+        // currentYear: new Date().getFullYear()
+    });
+});
+
 app.get("/about", (req, res) => {
     //res.send('About Page');
     res.render('about.hbs', {
